@@ -5,7 +5,7 @@ var path = require('path');
 var socketIO = require('socket.io');
 
 //var port = 8080;
-var port = process.env.PORT || 8000;
+var port = process.env.PORT || 8080;
 var players = {};
 
 // instancing
