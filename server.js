@@ -20,9 +20,13 @@ server.listen(port, function() {
     console.log("im listening");
 });
 
-app.get("/", function (requrest, response) {
+/*app.get("/", function (requrest, response) {
     response.sendFile(path.join(__dirname, "index.html"));
-});
+});*/
+
+app.get('/', function(req, res){
+    res.redirect('index.html"');
+ });
 
 io.on('connection', function (socket) {
     console.log("Someone has connected");
@@ -58,5 +62,3 @@ io.on('connection', function (socket) {
         socket.broadcast.emit('player_disconnect', socket.id);
     });
 });
-
-module.exports = app;
