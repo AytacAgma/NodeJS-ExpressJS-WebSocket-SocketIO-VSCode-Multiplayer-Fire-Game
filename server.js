@@ -21,7 +21,7 @@ server.listen(port, function() {
 });
 
 app.get("/", function (requrest, response) {
-    response.sendFile(path.join(__dirname, "landing.html"));
+    response.sendFile(path.join(__dirname, "index.html"));
 });
 
 io.on('connection', function (socket) {
