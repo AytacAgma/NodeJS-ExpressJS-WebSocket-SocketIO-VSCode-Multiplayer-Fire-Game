@@ -4,7 +4,8 @@ var http = require('http');
 var path = require('path');
 var socketIO = require('socket.io');
 
-var port = 8080;
+//var port = 8080;
+var port = process.env.PORT || 8000;
 var players = {};
 
 // instancing
@@ -14,19 +15,19 @@ var io = socketIO(server);
 app.set('port', port);
 
 //
-//app.use('/public', express.static(__dirname + "/public"));
+app.use('/public', express.static(__dirname + "/public"));
 
 server.listen(port, function() {
-    console.log("im listening");
+    console.log("I am listening " + port);
 });
 
-/*app.get("/", function (requrest, response) {
+app.get("/", function (requrest, response) {
     response.sendFile(path.join(__dirname, "index.html"));
-});*/
+});
 
-app.get('/', function(req, res){
+/*app.get('/', function(req, res){
     res.redirect('index.html"');
- });
+ });*/
 
 io.on('connection', function (socket) {
     console.log("Someone has connected");
