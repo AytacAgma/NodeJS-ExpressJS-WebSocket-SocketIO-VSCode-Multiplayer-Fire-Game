@@ -14,7 +14,7 @@ var io = socketIO(server);
 app.set('port', port);
 
 //
-app.use('/public', express.static(__dirname + "/public"));
+//app.use('/public', express.static(__dirname + "/public"));
 
 server.listen(port, function() {
     console.log("im listening");
