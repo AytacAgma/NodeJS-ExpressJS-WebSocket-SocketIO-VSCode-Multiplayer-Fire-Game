@@ -3,7 +3,7 @@ NodeJS ExpressJS WebSocket SocketIO Javascript VS Code Multiplayer Fire Game
 
 Game Link For Playing: https://multifire.herokuapp.com/ 
 
-P.S If your friends visit tha game link at the same time with you, all of you can play mutually and you can kill all of your friends if you are talented as Superman :)
+P.S. If your friends visit tha game link at the same time with you, all of you can play mutually and you can kill all of your friends if you are talented as Superman :)
 
 ### Keyboard Buttons For Playing Game: ###
 W -> Forward,
