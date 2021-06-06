@@ -3,7 +3,7 @@ NodeJS ExpressJS WebSocket SocketIO Javascript VS Code Multiplayer Fire Game
 
 https://multifire.herokuapp.com/ 
 
-### Keybord Buttons For Playing Game: ###
+### Keyboard Buttons For Playing Game: ###
 W -> Forward,
 A -> Left,
 D -> Right,
